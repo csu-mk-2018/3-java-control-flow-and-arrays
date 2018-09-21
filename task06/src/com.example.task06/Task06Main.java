@@ -10,8 +10,11 @@ public class Task06Main {
     }
 
     static int getMax(int a, int b, int c, int d) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        int max = Integer.MIN_VALUE;
+        max = Integer.max(a, max);
+        max = Integer.max(b, max);
+        max = Integer.max(c, max);
+        max = Integer.max(d, max);
+        return max;
     }
-
 }
