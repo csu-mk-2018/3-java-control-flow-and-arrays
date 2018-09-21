@@ -10,7 +10,10 @@ public class Task05Main {
     }
 
     static int getMin(int a, int b, int c) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        int min = Integer.MAX_VALUE;
+        min = Integer.min(a, min);
+        min = Integer.min(b, min);
+        min = Integer.min(c, min);
+        return min;
     }
 }
