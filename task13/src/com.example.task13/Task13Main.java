@@ -6,10 +6,11 @@ public class Task13Main {
     public static void main(String[] args) {
         //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
         // например вот так:
-
+        /*
         int[] arr = {9, 1100, 7, 8};
-       int [] arr2 =  removeMoreThen1000(arr);
+        int [] arr2 =  removeMoreThen1000(arr);
         System.out.println(java.util.Arrays.toString(arr2));
+        */
     }
 
     static  int getNewSize(int[] arr){
@@ -17,7 +18,7 @@ public class Task13Main {
         int size = 0;
 
         for (int elem:arr) {
-            if (elem > 1000)
+            if (elem <= 1000)
                 size++;
         }
 
@@ -29,7 +30,7 @@ public class Task13Main {
         if (arr == null || arr.length == 0)
             return arr;
 
-        int[] newMass = new int[arr.length - getNewSize(arr)];
+        int[] newMass = new int[getNewSize(arr)];
 
         for (int i = 0, j = 0; i < arr.length; i++)
            if (arr[i] <= 1000){
