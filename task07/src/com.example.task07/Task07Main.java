@@ -15,11 +15,8 @@ public class Task07Main {
     }
 
     static int sum(int[] arr) {
-        int res = 0;
-        for (int element : arr) {
-            res += element;
-        }
-        return res;
+        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        return 0;
     }
 
 }
