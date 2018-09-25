@@ -1,7 +1,5 @@
 package com.example.task13;
 
-import com.sun.deploy.util.ArrayUtil;
-
 public class Task13Main {
     public static void main(String[] args) {
         //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
