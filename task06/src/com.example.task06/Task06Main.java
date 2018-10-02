@@ -10,8 +10,50 @@ public class Task06Main {
     }
 
     static int getMax(int a, int b, int c, int d) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        if(a > b)
+        {
+            if(a > c)
+            {
+                if(a > d)
+                {
+                    return a;
+                }
+                else
+                {
+                    return d;
+                }
+            }
+            else if(c > d)
+            {
+                return c;
+            }
+            else
+            {
+                return d;
+            }
+        }
+        else if(b > c)
+        {
+            if(b > d)
+            {
+                return b;
+            }
+            else
+            {
+                return d;
+            }
+        }
+        else
+        {
+            if(c > d)
+            {
+                return c;
+            }
+            else
+            {
+                return d;
+            }
+        }
     }
 
 }
