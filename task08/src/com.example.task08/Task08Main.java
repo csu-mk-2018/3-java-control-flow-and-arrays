@@ -17,7 +17,7 @@ public class Task08Main {
     static long mult(int[] arr) {
         //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
 
-        long mul = Boolean.compare(arr.length > 0, false);
+        long mul = arr.length > 0 ? 1 : 0;
 
         for (int i = 0; i < arr.length; i++)
             mul *= arr[i];
