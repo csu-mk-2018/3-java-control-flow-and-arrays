@@ -11,8 +11,33 @@ public class Task12Main {
          */
     }
 
+    static int getMinElementIndex(int[] arr, int startIndex) {
+        int min = Integer.MAX_VALUE;
+        int index = -1;
+
+        for (int i = startIndex; i < arr.length; i++)
+            if (min > arr[i]) {
+                min = arr[i];
+                index = i;
+            }
+
+        return index;
+    }
+
     static void selectionSort(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+
+        int minIndex;
+        int temp;
+
+        if (arr == null || arr.length == 0)
+            return;
+
+        for (int i = 0; i < arr.length; i++) {
+            minIndex = getMinElementIndex(arr, i);
+            temp = arr[i];
+            arr[i] = arr[minIndex];
+            arr[minIndex] = temp;
+        }
     }
 
 }
