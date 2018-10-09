@@ -11,7 +11,7 @@ public class Task03Main {
 
     static String getNameOfWeekDays(int weekDaysNumber) {
         String[] weekday = {"понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"};
-        if (weekDaysNumber <= 7 && weekDaysNumber > 0)
+        if (weekDaysNumber <= 7 && weekDaysNumber > 0) 
             return weekday[weekDaysNumber - 1];
         else
             return "такого дня недели не существует";
