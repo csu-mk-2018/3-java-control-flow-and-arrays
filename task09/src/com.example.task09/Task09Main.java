@@ -15,8 +15,7 @@ public class Task09Main {
 
     static int min(int[] arr) {
         int min = Integer.MAX_VALUE;
-        for (int i:
-                arr) {
+        for (int i: arr) {
             min = Integer.min(i, min);
         }
         return min;
