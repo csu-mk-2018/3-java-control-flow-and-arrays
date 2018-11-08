@@ -12,8 +12,28 @@ public class Task13Main {
     }
 
     static int[] removeMoreThen1000(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return  null;
+        if (arr !=null) {
+            int newLen = 0;
+            for (int val : arr) {
+                if (val < 1000) {
+                    newLen++;
+                }
+            }
+
+            int newArr[] = new int[newLen];
+            int count = 0;
+            for (int val : arr) {
+                if (val < 1000) {
+                    newArr[count] = val;
+                    count++;
+                }
+            }
+
+            return newArr;
+        }
+        else {
+            return null;
+        }
     }
 
 }
